@@ -1,18 +1,158 @@
 @charset "UTF-8";
 
-*{
+/* Variáveis de cor */
+:root 
+{
+    --cor1: #152a91;
+    --cor2: #7ee1f3;
+    --cor3: #ffffff;
+}
+
+*
+{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    /*background-color: var(--cor2);*/
+    background-image: linear-gradient(to right, rgba(16, 211, 211, 0.973), rgb(102, 6, 126));
 }
 
 header
 {
-background-color: #5f9ea0;
-height: 100px;
+    background-color: var(--cor1) !important;
 
 }
 
-menu 
+header > nav 
+{
+    color: var(--cor3) !important;
+}
+
+nav.nav-bar .navbar-toggler
+{
+    color: var(--cor3) !important;
+}
+
+.nav-link 
+{
+    color: var(--cor3) !important;
+}
+
+.carousel-item, .d-block 
+{
+    max-height: 400px !important;
+}
+
+/*
+    Para fazer referência no CSS: 
+
+    class = .nomedaclasse
+    id = #nomedoid
+*/
+
+
+footer 
+{
+    background-color: var(--cor1);
+    width: 100vw;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;   
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer  div.end-email
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.end-email  #endereco 
+{
+    display: flex;
+    padding: 5px;
+    flex-flow: row wrap;
+    text-align: justify;
+    align-items: center;
+    flex: auto;
+}
+
+#endereco i.fa-location-dot 
+{
+    color: var(--cor3);
+    flex: 0 1 auto;
+    margin-right: 10px;
+}
+
+div.end-email  #telefone 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: justify;
+    align-items: center;
+    flex: auto;
+    padding: 5px;
+}
+
+#telefone i.fa-phone
+{
+    flex: 0 1 auto;
+    margin-right: 10px;   
+}
+
+div.end-email  #email 
+{
+    display: flex;
+    padding: 5px;
+    flex-flow: row wrap;
+    text-align: justify;
+    align-items: center;
+    flex: auto;
+}
+
+#email i.fa-envelope 
+{
+    flex: 0 1 auto;
+    margin-right: 10px;
+}
+
+footer p, footer span 
+{
+    color: var(--cor3);
+}
+
+footer  p#copyright
+{
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 50px;
+}
+
+footer a 
+{
+    color: var(--cor3);
+    text-decoration: var(--cor3);
+}
+
+footer i 
+{
+    color: var(--cor3);
+}
+
+
+
+
+/*menu 
 {
 position:absolute;
 left: 50%;
@@ -24,4 +164,4 @@ menu div.dropdown
 {
 display: inline-block;
 
-}
+}*/

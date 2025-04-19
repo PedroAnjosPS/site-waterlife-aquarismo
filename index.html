@@ -3,89 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AQUARIUS</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Waterlife Aquarismo</title>
+    <!-- link do código CSS - Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <!-- Link do CSS local (nosso próprio estilo) -->
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    <!-- Link para o serviços do Google e outros: Googgle Fonts, Google Icons, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
 </head>
 <body>
+
+    <!--Cabeçalho-->
     <header> 
          
-            <menu>
-                <!--peixes-->
-                <!--Dividir em Salgado e doce-->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Peixes
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Água Salgada</a>
+      <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" style="background-color: var(--cor1) !important;" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: var(--cor3) !important;" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- Espécies -> água doce e salgada-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Espécies
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Água Doce</a></li>
+                  <li><a class="dropdown-item" href="#">Água Salgada</a></li>
+                </ul>
+              </li>
 
+              <!-- Acessórios -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acessórios</a>
+              </li>
 
-                      <a class="dropdown-item" href="#">Água doce</a>
-                      
-                    </div>    
-                
-                  </div>
-                <!--Peças-->
-              
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Peças    
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Filtros</a>
-                      <a class="dropdown-item" href="#">Bombas D`água</a>
-                      <a class="dropdown-item" href="#">Limpeza</a>
-                      
-                    </div>    
-                     <!--Filtragem, bombas, produtos-->
-                 
-                  </div>
-                  <!--Acessórios-->
-                  <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Acessórios
-                    </button>   
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Corais</a>
-                        <a class="dropdown-item" href="#">Pedras</a>
-                                
-                      </div> 
-                  </div>
+              <!-- 'Peças' -> Filtros, bombas d'água e produtos de limpeza -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Peças
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Filtros</a></li>
+                  <li><a class="dropdown-item" href="#">Bombas d'água</a></li>
+                  <li><a class="dropdown-item" href="#">Produtos de Limpeza</a></li>
+                </ul>
+              </li>
 
-
-                               
-                <!--Montados-->
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Montados
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Pequeno</a>
-                      <a class="dropdown-item" href="#">Médio</a>
-                      <a class="dropdown-item" href="#">Grande</a>
-                      
-                    </div>    
-<!--Definição por tamanho-->
-
-
-
-      </menu>
-                <!--Cabeçalho-->
+              <!-- Montados -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Montados</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
        
     </header>
 
+    <!--Corpo/ informações principais-->
     <main>
-<!--Corpo/ informações principais-->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/banner1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/banner2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/banner3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
     </main>
     
-<footer>
-    <!--Informações mais detalhadas-->
-</footer>
+    <!-- rodapé -->
+    <footer>
+
+      <div class="end-email">
+
+        <!-- Ícone de endereço do site Font Awesome-->
+        <div id="endereco">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>
+            R. Gen. Glicério, 1465 - Vila Maceno, São José do Rio Preto - SP, 15060-000
+          </span>
+        </div>
+
+        <!-- Ícone de telefone do site Font Awesome-->
+        <div id="telefone">
+          <i class="fa-solid fa-phone"></i>
+          <span>+55 (17) 99251-2638</span>
+        </div>
+
+        <!-- Ícone de email do site Font Awesome-->
+        <div id="email">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="#" id="email">
+            algumemailaquarismo@gmail.com
+          </a>
+        </div>
+
+      </div>
+
+      <p id="copyright">
+        &copy; 2025 Waterlife Aquarismo. Todos os direitos reservados.
+      </p>
+
+    </footer>
+
+
 <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
