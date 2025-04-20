@@ -22,7 +22,7 @@ html, body
     width: 100vw;
     overflow-x: clip;
     /*background-color: var(--cor2);*/
-    background-image: linear-gradient(to right, rgba(16, 211, 211, 0.973), rgb(102, 6, 126));
+    background-image: linear-gradient(240deg, rgba(16, 211, 211, 0.973), rgb(102, 6, 126));
     display: flex;
     flex-flow: column wrap;
 }
