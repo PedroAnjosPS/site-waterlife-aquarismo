@@ -16,12 +16,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
-    height: 100vh;
+html, body 
+{
+    min-height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x: clip;
     /*background-color: var(--cor2);*/
     background-image: linear-gradient(to right, rgba(16, 211, 211, 0.973), rgb(102, 6, 126));
+    display: flex;
+    flex-flow: column wrap;
 }
 
 header
@@ -45,6 +48,11 @@ nav.nav-bar .navbar-toggler
     color: var(--cor3) !important;
 }
 
+main 
+{
+    flex: 1;
+}
+
 .carousel-item, .d-block 
 {
     max-height: 400px !important;
@@ -57,14 +65,13 @@ nav.nav-bar .navbar-toggler
     id = #nomedoid
 */
 
-
+/* Configurações do footer */
 footer 
 {
     background-color: var(--cor1);
     width: 100vw;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;   
+    padding: 10px;
+    position: relative; 
     display: flex;
     flex-flow: column wrap;
 }
@@ -135,7 +142,7 @@ footer  p#copyright
 {
     text-align: center;
     font-size: 0.8em;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 footer a 
@@ -148,20 +155,3 @@ footer i
 {
     color: var(--cor3);
 }
-
-
-
-
-/*menu 
-{
-position:absolute;
-left: 50%;
-transform: translateX(-50%);
-
-}
-
-menu div.dropdown
-{
-display: inline-block;
-
-}*/
