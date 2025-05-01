@@ -3,8 +3,8 @@
 /* Variáveis de cor */
 :root 
 {
-    --cor1: #00061e;
-    --cor2: #379cae;
+    --cor1: #000000;
+    --cor2: #04002b;
     --cor3: #ffffff;
 }
 
@@ -55,7 +55,7 @@ main
 
 .carousel-item, .d-block 
 {
-    max-height: 400px !important;
+    max-height: 600px !important;
     
 
 }
