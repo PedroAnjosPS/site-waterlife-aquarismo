@@ -166,7 +166,7 @@ div#conteudos-horizontais > div#info
     justify-content: center;
     padding: 20px;
 
-    max-width: 600px;
+    max-width: 600px !important;
 }
 
 div#info > h1 
@@ -190,10 +190,17 @@ div#conteudos-horizontais > div#video
 {
     flex: auto;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
 
-    max-width: 600px;
-    padding: 20px;
+    max-width: 600px !important;
+}
+
+div#video > iframe
+{
+    margin: auto;
+    width: 100%;
 }
 
 section#sobre-nos div#location
@@ -204,7 +211,6 @@ section#sobre-nos div#location
 div#location > iframe
 {
     width: 100%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
 }
 
 /*
