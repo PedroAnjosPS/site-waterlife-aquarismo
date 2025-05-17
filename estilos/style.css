@@ -8,6 +8,11 @@
     --cor3: #ffffff;
 }
 
+/*Fontes do site*/
+
+/*para título*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chewy&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 *
 {
     margin:0;
@@ -26,6 +31,8 @@ html, body
     display: flex;
     flex-flow: column wrap;
 }
+
+/*configurações do header*/
 
 header
 {
@@ -48,6 +55,8 @@ nav.nav-bar .navbar-toggler
     color: var(--cor3) !important;
 }
 
+/*configurações do main*/
+
 main 
 {
     flex: 1;
@@ -56,8 +65,146 @@ main
 .carousel-item, .d-block 
 {
     max-height: 600px !important;
-    
+}
 
+/*configuração section#destaque*/
+
+main section#destaque 
+{
+    color: #ffffff;
+    display: flex;
+    flex-flow: column wrap; /*simplificação das propriedades flex-direction e flex-wrap (shorthands)*/
+    justify-content: center; /*main-axis --> eixo principal*/
+    align-items: center; /*cross-axis --> eixo transversal (secundário)*/
+    margin-top: 35px;
+}
+
+section#destaque > h1
+{
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Chewy';
+}
+
+section#destaque hr
+{
+    color: #ffffff;
+    width: 25%;
+}
+
+section#destaque div#itens-destaque
+{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+div#itens-destaque div.item 
+{
+    background-color: #ffffff;
+    max-width: 250px;
+    max-height: 350px;
+    margin: 0px 40px 35px 40px;
+    padding: 10px;
+    border-radius: 20px;
+    color: #000000;
+
+    flex: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div.item img 
+{
+    width: 210px;
+    height: 180px;
+    flex: auto;
+    border-radius: 20px;
+}
+
+div.item h1 
+{
+    margin-top: 15px;
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family: 'Chewy';
+}
+
+
+/* configuração da área sobre-nós */
+
+main section#sobre-nos
+{
+    display: flex;
+    flex-flow: column wrap;
+    
+    color: #ffffff;
+}
+
+section#sobre-nos > div#conteudos-horizontais
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+
+div#conteudos-horizontais > div#info
+{
+    flex: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    max-width: 600px;
+}
+
+div#info > h1 
+{
+    font-family: 'Chewy';
+    font-size: 2.8em;
+    text-align: center;
+}
+
+div#info > p
+{
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 15px;
+}
+
+div#conteudos-horizontais > div#video 
+{
+    flex: auto;
+    display: flex;
+    justify-content: center;
+
+    max-width: 600px;
+    padding: 20px;
+}
+
+section#sobre-nos div#location
+{
+    width: 100%;
+}
+
+div#location > iframe
+{
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
 }
 
 /*
