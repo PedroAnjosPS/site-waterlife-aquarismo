@@ -247,13 +247,13 @@ footer  div.info-rodape
 
 div.info-rodape  #endereco 
 {
-    max-width: 300px;
+    max-width: 350px;
     padding: 5px;
-    margin: 5px;
+    margin: 8px;
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex: auto;
 }
@@ -268,14 +268,14 @@ div.info-rodape  #endereco
 #endereco span
 {
     text-align: justify;
-    max-width: 250px;
+    max-width: 280px;
 }
 
 div.info-rodape  #telefone 
 {
     max-width: 400px;
     text-align: justify;
-    margin: 5px;
+    margin: 8px;
     padding: 5px;
     
     display: flex;
@@ -294,7 +294,7 @@ div.info-rodape  #telefone
 div.info-rodape  #email 
 {
     max-width: 310px;
-    margin: 5px;
+    margin: 8px;
     padding: 5px;
 
     display: flex;
