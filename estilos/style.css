@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/*Fontes do site*/
+
+/*para título*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chewy&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 /* Variáveis de cor */
 :root 
 {
@@ -7,11 +13,6 @@
     --cor2: #04002b;
     --cor3: #ffffff;
 }
-
-/*Fontes do site*/
-
-/*para título*/
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Chewy&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 *
 {
@@ -92,6 +93,8 @@ section#destaque hr
     width: 25%;
 }
 
+/*configuração dos itens de destaque da página*/
+
 section#destaque div#itens-destaque
 {
     width: 100%;
@@ -135,6 +138,19 @@ div.item h1
     font-family: 'Chewy';
 }
 
+/*classes para a animação dos itens em destaque (complementada no arquivo JavaScript)*/
+
+.destaque 
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.destaque.aparecendo {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* configuração da área sobre-nós */
 
