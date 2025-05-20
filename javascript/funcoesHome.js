@@ -65,7 +65,7 @@ destaques.forEach(destaque => {
 
 //efeito dos itens de destaque aparecendo
 
-// Configura o Intersection Observer (API do JavaScript) para animar os itens quando aparecerem na tela
+// Configura o Intersection Observer (API do JavaScript que observa quando um elemento entra na área visível da tela) para animar os itens quando aparecerem na tela
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
