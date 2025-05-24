@@ -57,7 +57,7 @@ header.ativado
 header > nav 
 {
     color: var(--cor3) !important;
-    font-size: 1.2em !important;
+    font-size: 1.17em !important;
     font-weight: 600 !important;
     transition: all 0.5s ease-in-out !important;
 }
