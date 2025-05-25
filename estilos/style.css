@@ -84,6 +84,7 @@ header #whats-inst-icons
     color: #d4d4d4;
     font-size: 1.75em;
     margin: 0px 5px;
+    padding: 0px 0px 0px 0px !important;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -425,14 +426,20 @@ footer  p#copyright
 
 footer a 
 {
-    color: var(--cor3);
-    text-decoration: var(--cor3);
+    color: #dddddd;
+    text-decoration: none;
     text-align: justify;
+}
+
+footer a:hover
+{
+    color: #ffffff;
 }
 
 footer i 
 {
     color: var(--cor3);
+    font-size: 1.3em;
 }
 
 @media screen and (width <= 600px){
