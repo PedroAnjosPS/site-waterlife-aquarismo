@@ -68,12 +68,11 @@ header #whats-inst-icons
     margin: auto;
     padding: 0px 20px 0px 0px !important;
     opacity: 1; 
-    transition: opacity 0.5s ease; /*transição para dar efeito*/
+    transition: all 0.15s ease; /*transição para dar efeito*/
 }
 
 .sumir
 {
-    
     height: 0px;
     opacity: 0;
     pointer-events: none; /*impede que qualquer elemento seja clicado*/
@@ -118,7 +117,7 @@ header > nav
     color: var(--cor3) !important;
     font-size: 1.17em !important;
     font-weight: 600 !important;
-    transition: all 0.5s ease-in-out !important;
+    transition: all 0.15s ease-in-out !important;
 }
 
 header > nav.ativado

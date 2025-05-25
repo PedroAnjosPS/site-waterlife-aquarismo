@@ -10,13 +10,13 @@ window.addEventListener('scroll', function() {
         iconsHeader.classList.add('sumir');
         setTimeout(() => {
             iconsHeader.style.display = 'none';
-        }, 500);
+        }, 0.5);
     } else {
         cabecalho.classList.remove('ativado');
         navBar.classList.remove('ativado');
         iconsHeader.classList.remove('sumir');
         setTimeout(() => {
             iconsHeader.style.display = 'flex';
-        }, 500)
+        }, 0.5)
     }
 });
