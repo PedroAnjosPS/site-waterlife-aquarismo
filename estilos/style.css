@@ -54,6 +54,65 @@ header.ativado
     padding-top: 0px !important;
 }
 
+header #whats-inst-icons
+{
+    /*flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: auto;
+    background-color: #05050536;
+    margin: auto;
+    padding: 0px 20px 0px 0px !important;
+    opacity: 1; 
+    transition: opacity 0.5s ease; /*transição para dar efeito*/
+}
+
+.sumir
+{
+    
+    height: 0px;
+    opacity: 0;
+    pointer-events: none; /*impede que qualquer elemento seja clicado*/
+}
+
+
+#whats-inst-icons > a 
+{
+    color: #d4d4d4;
+    font-size: 1.5em;
+    margin: 0px 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#whats-inst-icons > a:hover
+{
+    color: #ffffff;
+}
+
+@media screen and (width <= 988px) {
+    header #whats-inst-icons
+    {
+        /*flexbox*/
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center !important;
+
+        padding-right: auto !important;
+    }
+
+    #whats-inst-icons > a 
+    {
+        font-size: 1.8em;
+        margin: 0px 8px;
+    }
+}
+
 header > nav 
 {
     color: var(--cor3) !important;
@@ -76,6 +135,11 @@ nav.nav-bar .navbar-toggler
 .nav-link 
 {
     color: var(--cor3) !important;
+}
+
+nav .dropdown-menu
+{
+    background-color: #0e0d0d !important;
 }
 
 /*configurações do main*/

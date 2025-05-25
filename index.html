@@ -10,7 +10,7 @@
     <!-- Link do CSS local (nosso próprio estilo) -->
     <link rel="stylesheet" href="estilos/style.css" media="all">
 
-    <!-- Link para o serviços do Google e outros: Googgle Fonts, Google Icons, etc. -->
+    <!-- Link para icones de sites externos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Link das fontes do google fonts -->
@@ -23,11 +23,17 @@
 
     <!--Cabeçalho-->
     <header> 
-         
+        
+      <!-- ícones do insta e do whatsapp -->
+      <div id="whats-inst-icons">
+        <a class="fa-brands fa-square-whatsapp" href="#"></a>
+        <a class="fa-brands fa-square-instagram" href="#"></a>
+      </div>
+
       <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" style="background-color: var(--cor1) !important;" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" style="color: var(--cor3) !important;" href="index.html">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px !important;">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -38,8 +44,8 @@
                   Espécies
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="especies.html?tipo=1" onclick="showDoce()">Água Doce</a></li>
-                  <li><a class="dropdown-item" href="especies.html?tipo=0" onclick="showSalgada()">Água Salgada</a></li>
+                  <li><a class="dropdown-item" href="especies.html?tipo=1">Água Doce</a></li>
+                  <li><a class="dropdown-item" href="especies.html?tipo=0">Água Salgada</a></li>
                 </ul>
               </li>
 
@@ -66,8 +72,6 @@
               </li>
             </ul>
           </div>
-
-          <!-- ícones do insta e do whatsapp -->
         </div>
       </nav>
        
@@ -77,7 +81,7 @@
     <main> <!-- principais informações do site -->
 
     <!--Banner-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 12px !important;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
