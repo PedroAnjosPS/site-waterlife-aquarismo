@@ -82,7 +82,7 @@ header #whats-inst-icons
 #whats-inst-icons > a 
 {
     color: #d4d4d4;
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin: 0px 5px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -93,12 +93,14 @@ header #whats-inst-icons
     color: #ffffff;
 }
 
+/* responsividade para telas menores com a largura indicada */
+
 @media screen and (width <= 988px) {
     header #whats-inst-icons
     {
         /*flexbox*/
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row-reverse wrap;
         align-items: center;
         justify-content: center !important;
 
@@ -107,8 +109,8 @@ header #whats-inst-icons
 
     #whats-inst-icons > a 
     {
-        font-size: 1.8em;
-        margin: 0px 8px;
+        font-size: 2.2em;
+        margin: 0px 12px;
     }
 }
 
@@ -432,4 +434,61 @@ footer a
 footer i 
 {
     color: var(--cor3);
+}
+
+@media screen and (width <= 600px){
+    footer  div.info-rodape
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start !important;
+        align-items: center;
+    }
+
+    div.info-rodape  #endereco 
+    {
+        padding-left: 15px;
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    #endereco i.fa-location-dot 
+    {
+        color: var(--cor3);
+        flex: 0 1 auto;
+        margin-right: 15px;
+    }
+
+    div.info-rodape  #telefone 
+    {
+        width: 400px;
+        padding-left: 15px;
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    #telefone i.fa-phone
+    {
+        flex: 0 1 auto;
+        margin-right: 15px;   
+    }
+
+    div.info-rodape  #email 
+    {
+        max-width: 400px;
+        padding-left: 15px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    #email i.fa-envelope 
+    {
+        flex: 0 1 auto;
+    }
 }
