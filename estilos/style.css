@@ -9,7 +9,7 @@
 /* Variáveis de cor */
 :root 
 {
-    --cor1: #000000;
+    --cor1: #141414;
     --cor2: #04002b;
     --cor3: #ffffff;
 }
@@ -62,11 +62,13 @@ header #whats-inst-icons
     align-items: center;
     justify-content: flex-end;
 
+    
     width: 100%;
     height: auto;
-    background-color: #05050536;
+    background-color: #00000017;
     margin: auto;
-    padding: 0px 20px 0px 0px !important;
+    margin-top: -9px;
+    padding: 5px 20px 5px 5px !important;
     opacity: 1; 
     transition: all 0.15s ease; /*transição para dar efeito*/
 }
@@ -97,21 +99,10 @@ header #whats-inst-icons
 /* responsividade para telas menores com a largura indicada */
 
 @media screen and (width <= 988px) {
-    header #whats-inst-icons
-    {
-        /*flexbox*/
-        display: flex;
-        flex-flow: row-reverse wrap;
-        align-items: center;
-        justify-content: center !important;
-
-        padding-right: auto !important;
-    }
-
     #whats-inst-icons > a 
     {
         font-size: 2.2em;
-        margin: 0px 12px;
+        margin: 0px 5px;
     }
 }
 
