@@ -117,9 +117,8 @@ header #whats-inst-icons
 header > nav 
 {
     color: var(--cor3) !important;
-    font-size: 1.17em !important;
-    font-weight: 600 !important;
-    transition: all 0.15s ease-in-out !important;
+    font-size: 1.19em !important;
+    transition: all 0.4s ease-in-out !important;
 }
 
 header > nav.ativado
