@@ -2,13 +2,13 @@
 const destaques = [
     {
         "nome": "Barbus Sumatra",
-        "descricao": "Peixe de água doce.",
+        "descricao": "Peixe de água doce, popularmente conhecido como Barbo-tigre.",
         "preco": 5.00,
         "caminhoImg": "imagens/peixe-doce.jpg"
     },
     {
         "nome": "Ocellaris Comum",
-        "descricao": "Peixe de água salgada.",
+        "descricao": "Peixe de água salgada, popularmente conhecido como Peixe-palhaço comum.",
         "preco": 35.00,
         "caminhoImg": "imagens/peixe-salgada.jfif"
     },
@@ -56,7 +56,7 @@ destaques.forEach(destaque => {
     div.innerHTML = `
         <img src="${destaque.caminhoImg}" alt="${destaque.nome}">
         <h1>${destaque.nome}</h1>
-        <p>${destaque.descricao}</p>
+        <p id='descricao'>${destaque.descricao}</p>
         <p><strong>${precoFormatado}</strong></p>
     `;
 

@@ -216,6 +216,16 @@ div.item h1
     font-family: 'Chewy';
 }
 
+div.item p#descricao
+{
+    max-width: 220px;
+    font-size: 0.9em;
+    text-align: justify;
+    white-space: nowrap; /*para não quebrar a linha com o texto*/
+    overflow: hidden; /*esconder caso o texto saia para fora do conteiner*/
+    text-overflow: ellipsis; /*adiciona "..." para textos grandes*/
+}
+
 /*classes para a animação dos itens em destaque (complementada no arquivo JavaScript)*/
 
 .destaque 
