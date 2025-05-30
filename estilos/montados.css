@@ -4,14 +4,11 @@
 section#area-titulo
 {
     /*fundo*/
-    /*background:
-        linear-gradient(rgba(0,0,0,0.6)), 
-        url("../imagens/background-corais.jpg");*/
-        background-image: url("../imagens/background-especies.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center center;
+    background-image: url("../imagens/background-aquario.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
             
 
     /*flexbox*/
@@ -23,7 +20,6 @@ section#area-titulo
     width: 100%;
     height: 500px;
 }
-
 
 section#area-titulo h1
 {
