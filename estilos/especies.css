@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* configurando as sections de produtos de espécies */
-section#especie-titulo
+section#area-titulo
 {
     /*fundo*/
     background:
@@ -23,7 +23,7 @@ section#especie-titulo
     height: 500px;
 }
 
-section#especie-titulo h1
+section#area-titulo h1
 {
     color: #ffffff;
     font-weight: 700;
@@ -31,12 +31,12 @@ section#especie-titulo h1
     font-size: 3.5em;
 }
 
-section#especie-titulo h2
+section#area-titulo h2
 {
     color: #ffffff;
 }
 
-section#area-especies
+section#area-itens
 {
     display: flex;
     flex-flow: column wrap;
@@ -46,7 +46,7 @@ section#area-especies
     width: 100%;
 }
 
-section#especie-doce, section#especie-salgada
+section#area1, section#area2
 {
     /* flexbox */
     display: flex;
@@ -61,7 +61,7 @@ section#especie-doce, section#especie-salgada
     padding: 50px;
 }
 
-section#especie-doce div.item, section#especie-salgada div.item 
+section#area1 div.item, section#area2 div.item 
 {
     background-color: #ffffff;
     max-width: 250px;

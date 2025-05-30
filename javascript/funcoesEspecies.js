@@ -12,13 +12,13 @@ window.onload = function() {
 };
 
 function showDoce() {
-    document.getElementById('especie-doce').style.display = 'flex';
-    document.getElementById('especie-salgada').style.display = 'none';
+    document.getElementById('area1').style.display = 'flex';
+    document.getElementById('area2').style.display = 'none';
 };
 
 function showSalgada() {
-    document.getElementById('especie-doce').style.display = 'none';
-    document.getElementById('especie-salgada').style.display = 'flex';
+    document.getElementById('area1').style.display = 'none';
+    document.getElementById('area2').style.display = 'flex';
 };
 
 
@@ -65,10 +65,10 @@ especies.forEach(especies => {
     `;
 
     if (especies.tipo === '1') {
-        const  especiesDoce = document.getElementById('especie-doce');
+        const  especiesDoce = document.getElementById('area1');
         especiesDoce.appendChild(div);
     } else {
-        const  especiesSalgada = document.getElementById('especie-salgada');
+        const  especiesSalgada = document.getElementById('area2');
         especiesSalgada.appendChild(div);
     }
 });
