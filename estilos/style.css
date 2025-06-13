@@ -10,7 +10,8 @@
 :root 
 {
     --cor1: #141414;
-    --cor2: #04002b;
+    /*--cor2: #3d0147;*/
+    --cor2: #230029;
     --cor3: #ffffff;
 }
 
@@ -94,6 +95,12 @@ header #whats-inst-icons
 #whats-inst-icons > a:hover
 {
     color: #ffffff;
+}
+
+/*configurando a logo do header (nav-bar)*/
+.logo 
+{
+    max-width: 100px;
 }
 
 /* responsividade para telas menores com a largura indicada */
