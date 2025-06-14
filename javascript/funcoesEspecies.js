@@ -2,7 +2,7 @@
 //Vai depender de que link o usuário clicar
 window.onload = function() {
     const url = new URLSearchParams(window.location.search); //pega a informação da url
-    const tipo = url.get('tipo'); //pega o tipo da url
+    const tipo = url.get('tipo'); //pega o tipo da url 
 
     if (tipo === '1') {
         showDoce();
@@ -34,12 +34,77 @@ function showSalgada() {
 //As imagens devem ser colocadas nas pastas de "peixes-doces" ou "peixes-salgados" (para uma maior organização), cujas pastas estão dentro da pasta "imagens", as imagens vão ser separadas de acordo com o tipo da espécie (se ela for de água salgada ou doce);
 //Para que as imagens apareçam deve-se colocar o caminho da imagem, exemplo: "imagens/peixes-doces/barbus-sumatra.jpg" (também não pode haver espaço em branco, além do nome da imagem ter que terminar com o tipo da extensão da mesma, podendo ser ".jpg", ".png", ".jfif" etc.);
 const especies = [
+    //PEIXES DE ÁGUA DOCE
     {
         "tipo": "1", //tipo 1 = água doce; tipo 0 = água salgada;
         "nome": "Barbus Sumatra",
-        "descricao": "Peixe de água doce, popularmente conhecido como Barbo-tigre.",
+        "descricao": "Popularmente conhecido como Barbo-tigre.",
         "preco": 5.00,
         "caminhoImg": "imagens/peixes-doces/barbus-sumatra.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Acará-Bandeira",
+        "descricao": "Também conhecido como Acará Bandeira Marmorato.",
+        "preco": 9.90,
+        "caminhoImg": "imagens/peixes-doces/acara-marmore.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Neon Cardinal",
+        "descricao": "Também conhecido como Tetra-cardinal.",
+        "preco": 8.50,
+        "caminhoImg": "imagens/peixes-doces/neon-cardinal.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Ramirezi Eletric Blue",
+        "descricao": "Tem como nome científico Microgeophagus ramirezi.",
+        "preco": 15.00,
+        "caminhoImg": "imagens/peixes-doces/ramirezi-eletric-blue.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Ramirezi Ouro",
+        "descricao": "Também conhecido como Ramirezi Dourado.",
+        "preco": 8.00,
+        "caminhoImg": "imagens/peixes-doces/ramirezi-ouro.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Camarão Vermelho",
+        "descricao": "Também conhecido como Camarão Red Sakura.",
+        "preco": 15.00,
+        "caminhoImg": "imagens/peixes-doces/camarao-vermelho.png"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Betta Macho",
+        "descricao": "Também conhecido como Peixe-Lutador-Siamês.",
+        "preco": 15.00,
+        "caminhoImg": "imagens/peixes-doces/betta-macho.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Caramujo Ampulária",
+        "descricao": "Também conhecido como Ampullariidae.",
+        "preco": 2.00,
+        "caminhoImg": "imagens/peixes-doces/caramujo-ampularia.jpg"
+    },
+    {
+        "tipo": "1", 
+        "nome": "Plati Azul",
+        "descricao": "Tem como nome científico Xiphophorus maculatus.",
+        "preco": 2.99,
+        "caminhoImg": "imagens/peixes-doces/plati-azul.jpg"
+    },
+    //PEIXES DE ÁGUA SALGADA
+    {
+        "tipo": "0", 
+        "nome": "Ocellaris Comum",
+        "descricao": "Conhecido como Peixe-Palhaço-Comum",
+        "preco": 35.00,
+        "caminhoImg": "imagens/peixes-salgados/peixe-salgada.jfif"
     }
 ];
 
