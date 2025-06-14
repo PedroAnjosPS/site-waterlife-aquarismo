@@ -194,19 +194,50 @@ especies.forEach(especies => {
     }
 });
 
-// Configura o Intersection Observer (API do JavaScript que observa quando um elemento entra na área visível da tela) para animar os itens quando aparecerem na tela
+
+// Teste de visualização (gerando os itens por estrutura de repetição)
+/*document.addEventListener('DOMContentLoaded', () => {
+    const doce = document.getElementById('especie-doce');
+    
+    for (let item = 1; item < 10; item++) {
+
+        let itemDoce = document.createElement('div');
+        itemDoce.classList.add('item');
+        
+        itemDoce.innerHTML = `
+            <div class='item'>
+                <img src='imagens/peixe-doce.jpg' alt='img-teste'>
+                <h1>Peixe Doce</h1>
+                <p>Descrição.</p>
+                <p><strong>Valor R$ 0,00</strong></p>
+            </div>
+        `;
+
+        doce.appendChild(itemDoce);
+    }
+
+},);  
+
+// Teste de visualização (gerando os itens por estrutura de repetição)
 document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add('aparecendo');
-                observer.unobserve(entry.target); //Para a animação funcionar só uma vez, após o carregamento da página
-            }
-        });
-    }, {threshold: 0.1}); //10% do elemento visível pode disparar
+    const salgada = document.getElementById('especie-salgada');
+    
+    for (let item = 1; item < 10; item++) {
 
-    //Aplica o efeito do observer para cada item criado
-    const itens = document.querySelectorAll('.item.destaque');
-    itens.forEach(item => observer.observe(item));
+        let itemSalgada = document.createElement('div');
+        itemSalgada.classList.add('item');
+        
+        itemSalgada.innerHTML = `
+            <div class='item'>
+                <img src='imagens/peixe-salgada.jfif' alt='img-teste'>
+                <h1>Peixe Salgada</h1>
+                <p>Descrição.</p>
+                <p><strong>Valor R$ 0,00</strong></p>
+            </div>
+        `;
 
-},); 
+        salgada.appendChild(itemSalgada);
+    }
+
+},);  */
+

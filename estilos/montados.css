@@ -4,7 +4,9 @@
 section#area-titulo
 {
     /*fundo*/
-    background-image: url("../imagens/background-aquario.jpeg");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('../imagens/background-aquario.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
