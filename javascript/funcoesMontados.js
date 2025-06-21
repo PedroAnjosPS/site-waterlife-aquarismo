@@ -1,4 +1,4 @@
-const especies = [
+const montados = [
     //AQUÁRIOS MONTADOS
     {
         "tipo": "1", 
@@ -58,12 +58,12 @@ const especies = [
 
 
 //código JavaScript para os itens das espécies serem feitos:
-especies.forEach(especies => {
+montados.forEach(montados => {
     const div = document.createElement('div');
     div.classList.add('item');
 
     // Formatando o preco para exibição no arquivo html
-    let preco = especies.preco;
+    let preco = montados.preco;
 
     let precoFormatado =  preco.toLocaleString('pt-BR', {
         style: 'currency', 
@@ -71,12 +71,12 @@ especies.forEach(especies => {
     });
 
     div.innerHTML = `
-        <img src="${especies.caminhoImg}" alt="${especies.nome}">
-        <h1>${especies.nome}</h1>
+        <img src="${montados.caminhoImg}" alt="${montados.nome}">
+        <h1>${montados.nome}</h1>
         <p><strong>${precoFormatado}</strong></p>
     `;
 
-    if (especies.tipo === '1') {
+    if (montados.tipo === '1') {
         const  especiesDoce = document.getElementById('area1');
         especiesDoce.appendChild(div);
     } else {
