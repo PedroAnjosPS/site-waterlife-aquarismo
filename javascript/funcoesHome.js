@@ -59,7 +59,7 @@ destaques.forEach(destaque => {
         <p id='descricao'>${destaque.descricao}</p>
         <p><strong>${precoFormatado}</strong></p>
     `;
-
+    
     areaDestaques.appendChild(div);
 });
 
