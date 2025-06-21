@@ -38,7 +38,7 @@ const especies = [
 
     {
         "tipo": "0", 
-        "nome": "Hang ON RS-2000",
+        "nome": "Hang On RS-2000",
         "preco": 140.00,
         "caminhoImg": "imagens/produtos/filtros/hang_ON_Rs2000.jpg"
     },
@@ -50,184 +50,159 @@ const especies = [
     },
     {
         "tipo": "0", 
-        "nome": "Neon Cardinal",
-        "descricao": "Também conhecido como Tetra-cardinal.",
-        "preco": 8.50,
-        "caminhoImg": "imagens/peixes-doces/neon-cardinal.jpg"
+        "nome": "Filtro interno OT-82A",
+        "preco": 90.00,
+        "caminhoImg": "imagens/produtos/filtros/filtro_Interno _OT82A.jpg"
     },
     {
         "tipo": "0", 
-        "nome": "Ramirezi Eletric Blue",
-        "descricao": "Tem como nome científico Microgeophagus ramirezi.",
-        "preco": 15.00,
-        "caminhoImg": "imagens/peixes-doces/ramirezi-eletric-blue.jpg"
+        "nome": "Filtro interno OT-62A",
+        "preco": 66.00,
+        "caminhoImg": "imagens/produtos/filtros/filtroInterno_ot62a.jpg"
     },
     {
         "tipo": "0", 
-        "nome": "Ramirezi Ouro",
-        "descricao": "Também conhecido como Ramirezi Dourado.",
-        "preco": 8.00,
-        "caminhoImg": "imagens/peixes-doces/ramirezi-ouro.jpg"
+        "nome": "Hang On HF-350",
+        "preco": 70.00,
+        "caminhoImg": "imagens/produtos/filtros/hANG_ON_HF350.jpg"
     },
     {
         "tipo": "0", 
-        "nome": "Camarão Vermelho",
-        "descricao": "Também conhecido como Camarão Red Sakura.",
-        "preco": 15.00,
-        "caminhoImg": "imagens/peixes-doces/camarao-vermelho.png"
+        "nome": "Hang On HF-250",
+        "preco": 60.00,
+        "caminhoImg": "imagens/produtos/filtros/hANG_ON_HF250.jpg"
     },
     {
         "tipo": "0", 
-        "nome": "Betta Macho",
-        "descricao": "Também conhecido como Peixe-Lutador-Siamês.",
-        "preco": 15.00,
-        "caminhoImg": "imagens/peixes-doces/betta-macho.jpg"
+        "nome": "Hang On HL-400",
+        "preco": 195.00,
+        "caminhoImg": "imagens/produtos/filtros/hang_on_HL400.jpg"
     },
     {
         "tipo": "0", 
-        "nome": "Caramujo Ampulária",
-        "descricao": "Também conhecido como Ampullariidae.",
-        "preco": 2.00,
-        "caminhoImg": "imagens/peixes-doces/caramujo-ampularia.jpg"
+        "nome": "Filtro interno JP-092",
+        "preco": 130.00,
+        "caminhoImg": "imagens/produtos/filtros/filtroInterno_Jp.jpg"
     },
     {
         "tipo": "0", 
-        "nome": "Plati Azul",
-        "descricao": "Tem como nome científico Xiphophorus maculatus.",
-        "preco": 2.99,
-        "caminhoImg": "imagens/peixes-doces/plati-azul.jpg"
+        "nome": "Filtro interno OT-2000F",
+        "preco": 140.00,
+        "caminhoImg": "imagens/produtos/filtros/filtroInterno_ot2000f.jpg"
     },
 
     //BOMBAS D'AGUA
 
     {
         "tipo": "1", 
-        "nome": "Ocellaris Comum",
-        "descricao": "Conhecido como Peixe-Palhaço-Comum",
-        "preco": 35.00,
-        "caminhoImg": "imagens/peixes-salgados/peixe-salgada.jfif"
+        "nome": "XTPUMP 240",
+        "preco": 68.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xt_pump_240.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Baiacu-de-Valentini",
-        "descricao": "Conhecido como Peixe-Balão",
-        "preco": 219.00,
-        "caminhoImg": "imagens/peixes-salgados/baiacu-valentini.jpg"
+        "nome": "XTPUMP 900",
+        "preco": 120.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xtpump_900.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Caranguejo Algueiro",
-        "descricao": "Conhecido também como Caranguejo Mitrax",
-        "preco": 49.00,
-        "caminhoImg": "imagens/peixes-salgados/caranguejo-algueiro.jpg"
+        "nome": "XTPUMP 360",
+        "preco": 95.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xt_pump_360.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Apogon",
-        "descricao": "Conhecido como Peixe-Cardeal",
-        "preco": 89.00,
-        "caminhoImg": "imagens/peixes-salgados/apogon.jpg"
+        "nome": "XTPUMP 1600",
+        "preco": 169.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xtpump_1600.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Ermitão",
-        "descricao": "Conhecido também como Caranguejo-Ermitão",
-        "preco": 69.00,
-        "caminhoImg": "imagens/peixes-salgados/ermitao.jpg"
+        "nome": "XTPUMP 240",
+        "preco": 68.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xt_pump_240.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Coerelus",
-        "descricao": "Conhecido como Peixe-Balão",
-        "preco": 99.00,
-        "caminhoImg": "imagens/peixes-salgados/coerelus.jpg"
+        "nome": "XTPUMP 2500",
+        "preco": 259.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xtpump_2500.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Estrela Chocolate",
-        "descricao": "Encontrada nas águas do Indo-Pacífico",
-        "preco": 199.00,
-        "caminhoImg": "imagens/peixes-salgados/estrela-chocolate.jpg"
+        "nome": "XTPUMP 3000",
+        "preco": 275.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xT_PUMP_3000.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Tamarin Wrasse",
-        "descricao": "Conhecido como Bodião Manchado",
-        "preco": 849.00,
-        "caminhoImg": "imagens/peixes-salgados/tamarin-wrasse.jpg"
+        "nome": "XTPUMP 4000 LH",
+        "preco": 543.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/xT_PUMP_4000_LH.jpg"
     },
     {
         "tipo": "1", 
-        "nome": "Tomini",
-        "descricao": "Conhecido como Bristletooth Tomini Tang",
-        "preco": 849.00,
-        "caminhoImg": "imagens/peixes-salgados/tomini.jpg"
+        "nome": "ACPUMP 4000",
+        "preco": 711.00,
+        "caminhoImg": "imagens/produtos/bombas_dagua/aC_PUMP_4000.jpg"
     },
 
     //PRODUTOS DE LIMPEZA
 
     {
         "tipo": "2", 
-        "nome": "Ocellaris Comum",
-        "descricao": "Conhecido como Peixe-Palhaço-Comum",
-        "preco": 35.00,
-        "caminhoImg": "imagens/peixes-salgados/peixe-salgada.jfif"
+        "nome": "Raspador magnético RS-32C",
+        "preco": 141.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/raspador_magnetico_RS32C.jpeg"
     },
     {
         "tipo": "2", 
-        "nome": "Baiacu-de-Valentini",
-        "descricao": "Conhecido como Peixe-Balão",
-        "preco": 219.00,
-        "caminhoImg": "imagens/peixes-salgados/baiacu-valentini.jpg"
+        "nome": "Raspador manual 60cm",
+        "preco": 65.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/raspador_manual_60cm .jpg"
     },
     {
         "tipo": "2", 
-        "nome": "Caranguejo Algueiro",
-        "descricao": "Conhecido também como Caranguejo Mitrax",
-        "preco": 49.00,
-        "caminhoImg": "imagens/peixes-salgados/caranguejo-algueiro.jpg"
+        "nome": "DIP - desinfetante de corais",
+        "preco": 75.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/dip_desinfetante_corais.jpg"
     },
     {
         "tipo": "2", 
-        "nome": "Apogon",
-        "descricao": "Conhecido como Peixe-Cardeal",
-        "preco": 89.00,
-        "caminhoImg": "imagens/peixes-salgados/apogon.jpg"
-    },
-    {
-        "tipo": "2", 
-        "nome": "Ermitão",
-        "descricao": "Conhecido também como Caranguejo-Ermitão",
-        "preco": 69.00,
-        "caminhoImg": "imagens/peixes-salgados/ermitao.jpg"
-    },
-    {
-        "tipo": "2", 
-        "nome": "Coerelus",
-        "descricao": "Conhecido como Peixe-Balão",
+        "nome": "NITRAOUT",
         "preco": 99.00,
-        "caminhoImg": "imagens/peixes-salgados/coerelus.jpg"
+        "caminhoImg": "imagens/produtos/produtos_limpeza/nitraout.jpg"
     },
     {
         "tipo": "2", 
-        "nome": "Estrela Chocolate",
-        "descricao": "Encontrada nas águas do Indo-Pacífico",
-        "preco": 199.00,
-        "caminhoImg": "imagens/peixes-salgados/estrela-chocolate.jpg"
+        "nome": "PHOSOUT",
+        "preco": 99.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/phosOut.jpg"
     },
     {
         "tipo": "2", 
-        "nome": "Tamarin Wrasse",
-        "descricao": "Conhecido como Bodião Manchado",
-        "preco": 849.00,
-        "caminhoImg": "imagens/peixes-salgados/tamarin-wrasse.jpg"
+        "nome": "Phosphate remover",
+        "preco": 36.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/phosphate_remover.jpg"
     },
     {
         "tipo": "2", 
-        "nome": "Tomini",
-        "descricao": "Conhecido como Bristletooth Tomini Tang",
-        "preco": 849.00,
-        "caminhoImg": "imagens/peixes-salgados/tomini.jpg"
+        "nome": "AmGuard",
+        "preco": 100.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/amGuard.jpg"
+    },
+    {
+        "tipo": "2", 
+        "nome": "Ot Ammonia Remover",
+        "preco": 33.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/otAmmoniaRemover.jpg"
+    },
+    {
+        "tipo": "2", 
+        "nome": "Amonclean",
+        "preco": 65.00,
+        "caminhoImg": "imagens/produtos/produtos_limpeza/amonClean.jpg"
     }
 ];
 
