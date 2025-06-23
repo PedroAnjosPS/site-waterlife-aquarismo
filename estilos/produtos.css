@@ -98,3 +98,17 @@ div.item h1
     text-overflow: ellipsis; /*adiciona "..." para textos grandes*/
 }
 
+/*classes para a animação dos itens em destaque (complementada no arquivo JavaScript)*/
+
+.destaque 
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.destaque.aparecendo {
+    opacity: 1;
+    transform: translateY(0);
+}
+

@@ -60,7 +60,7 @@ const corais = [
 //código JavaScript para os itens das espécies serem feitos:
 corais.forEach(corais => {
     const div = document.createElement('div');
-    div.classList.add('item');
+    div.classList.add('item', 'destaque');
 
     // Formatando o preco para exibição no arquivo html
     let preco = corais.preco;
@@ -80,3 +80,20 @@ corais.forEach(corais => {
     coraisDiv.appendChild(div);
     
 });
+
+// Configura o Intersection Observer (API do JavaScript que observa quando um elemento entra na área visível da tela) para animar os itens quando aparecerem na tela
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('aparecendo');
+                observer.unobserve(entry.target); //Para a animação funcionar só uma vez, após o carregamento da página
+            }
+        });
+    }, {threshold: 0.1}); //10% do elemento visível pode disparar
+
+    //Aplica o efeito do observer para cada item criado
+    const itens = document.querySelectorAll('.item.destaque');
+    itens.forEach(item => observer.observe(item));
+
+},); 

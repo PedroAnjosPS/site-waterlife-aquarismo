@@ -168,7 +168,7 @@ const especies = [
 //código JavaScript para os itens das espécies serem feitos:
 especies.forEach(especies => {
     const div = document.createElement('div');
-    div.classList.add('item');
+    div.classList.add('item', 'destaque');
 
     // Formatando o preco para exibição no arquivo html
     let preco = especies.preco;
